@@ -4,7 +4,7 @@
 
 ## Description
 A small FPS made with the Godot Engine.<br />
-I made this game for practice also I'm not an expert programmer or Godot user.
+I'm not an expert programmer or Godot user so parts of the code may be silly silly.
 
 ## Controls
 Use `left mouse button` to fire<br />
