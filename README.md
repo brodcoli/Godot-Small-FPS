@@ -14,6 +14,7 @@ Use `left shift` to crouch<br />
 Use `space` to jump<br />
 Use `left shift + space` to crouch-jump
 
+## Credit
 Thanks to turtlewit for their player controller script that I partly modified:<br />
 https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd
 
