@@ -15,7 +15,7 @@ Use `space` to jump<br />
 Use `left shift + space` to crouch-jump
 
 ## Credit
-Thanks to turtlewit for their player controller script that I partly modified:<br />
+I partly modified a script made by turtlewit for the player controller:<br />
 https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd
 
 Credit to these SFX I used in the game:<br />
