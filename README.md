@@ -9,7 +9,7 @@ This game is more of a demo also I'm not an expert programmer or Godot user.
 ## Controls
 Use `left mouse button` to fire<br />
 Use `W`, `A`, `S`, `D` to move<br />
-Use `Q<` to sprint<br />
+Use `Q` to sprint<br />
 Use `left shift` to crouch<br />
 Use `space` to jump<br />
 Use `left shift + space` to crouch-jump
