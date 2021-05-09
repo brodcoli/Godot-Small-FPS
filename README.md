@@ -2,8 +2,17 @@
 
 ![](https://i.imgur.com/2jqKUjU.png)
 
+### Description
 A small FPS made with the Godot Engine.<br />
 This game is more of a demo also I'm not an expert programmer or Godot user.
+
+### Controls
+Use left mouse button to fire
+Use <ins>W, A, S, D</ins> to move
+Use <ins>Q</ins> to sprint
+Use <ins>left shift</ins> to crouch
+Use <ins>space</ins> to jump
+Use <ins>left shift + space</ins> to crouch-jump
 
 Thanks to turtlewit for their player controller script that I partly modified:<br />
 https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd
