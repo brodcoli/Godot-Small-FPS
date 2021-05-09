@@ -10,28 +10,28 @@ var cmd = {
 	up_move 		= 0.0
 }
 
-const walk_speed = 6 #4
-const sprint_speed = 10 #7
+const walk_speed = 6
+const sprint_speed = 10
 const crouch_speed = 2
 const noclip_speed = 40
-const jump_speed = 5.3 #4 #8
+const jump_speed = 5.3
 const noclip_hyper_speed = 200
 const gravity_strength = 15
 
 var x_mouse_sensitivity = .1
 
-var gravity = gravity_strength #7
+var gravity = gravity_strength
 
-var friction = 6.0 #7
+var friction = 6.0
 
 var move_speed = 15.0
-var run_acceleration = 20.0 #14
-var run_deacceleration = 12.0 #10
+var run_acceleration = 20.0
+var run_deacceleration = 12.0
 var air_acceleration = 0.7
 var air_deacceleration = 2.0
 var air_control = 0.3
-var side_strafe_acceleration = 50.0 #0
-var side_strafe_speed = 1.0 #0
+var side_strafe_acceleration = 50.0
+var side_strafe_speed = 1.0
 var move_scale = 1.0
 
 var ground_snap_tolerance = 1
@@ -64,13 +64,8 @@ func process_movement(delta):
 	var just_uncrouched = Input.is_action_just_released("crouch")
 	
 	if just_crouched:
-#		_stand_collision.disabled = true
-#		_crouch_collision.disabled = false
 		_player.get_node("CrouchAnimator").play("Crouch")
 	elif just_uncrouched:
-#		_stand_collision.disabled = false
-#		_crouch_collision.disabled = true
-#		_player.translation.y += 0.25
 		_player.get_node("CrouchAnimator").play("Stand")
 		
 	
@@ -106,10 +101,6 @@ func process_movement(delta):
 				speed = sprint_speed
 			elif is_crouching:
 				speed = crouch_speed
-		
-			
-#		if not touching_ground:
-#			speed *= 1.2
 			
 		if vel_h.length() > speed:
 			vel_h = vel_h.normalized() * speed
@@ -118,7 +109,6 @@ func process_movement(delta):
 		
 		player_velocity.y -= gravity * delta
 
-		#player_velocity = _player.move_and_slide(player_velocity, up, false, 4, 0.785398, false)
 		if just_jumped:
 			player_velocity = _player.move_and_slide(player_velocity, up, false, 4, 0.785398, false)
 		else:
@@ -128,7 +118,6 @@ func process_movement(delta):
 		return player_velocity
 
 func _snap_to_ground(from):
-	#var from = global_transform.origin
 	var to = from + -_head.global_transform.basis.y * ground_snap_tolerance
 	var space_state = get_world().get_direct_space_state()
 
@@ -182,8 +171,6 @@ func _air_move(delta):
 	_accelerate(wishdir, wishspeed, accel, delta)
 	if air_control > 0:
 		_air_control(wishdir, wishspeed2, delta)
-
-	#player_velocity.y -= gravity * delta
 
 func _air_control(wishdir, wishspeed, delta):
 	var zspeed = 0.0
