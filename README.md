@@ -13,6 +13,7 @@ Use `Q` to sprint<br />
 Use `left shift` to crouch<br />
 Use `space` to jump<br />
 Use `left shift + space` to crouch-jump<br />
+Use `Esc` to "pause" (doesn't really pause)
 Use `F11` to toggle fullscreen
 
 ## Credit
