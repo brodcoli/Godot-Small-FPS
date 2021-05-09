@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/F.wav-88c7b8498fec3f64cd323831847b58e9.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Robot/Fire/F.wav"
+dest_files=[ "res://.import/F.wav-88c7b8498fec3f64cd323831847b58e9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

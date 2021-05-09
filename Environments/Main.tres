@@ -1,0 +1,7 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+ssao_enabled = true
+ssao_intensity = 1.5
+adjustment_brightness = 0.9
+adjustment_contrast = 1.1

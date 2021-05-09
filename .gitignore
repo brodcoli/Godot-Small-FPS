@@ -1,0 +1,12 @@
+.import/
+*.translation
+.mono/
+data_*/
+export.cfg
+export_presets.cfg
+
+bin/
+lib/
+
+Builds/
+Notes/

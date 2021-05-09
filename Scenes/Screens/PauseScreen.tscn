@@ -1,0 +1,38 @@
+[gd_scene format=2]
+
+[node name="PauseScreen" type="CanvasLayer"]
+
+[node name="Container" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Container/MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 0.309804 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container"]
+anchor_right = 1.0
+margin_bottom = 51.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Container/HBoxContainer"]
+margin_left = 486.0
+margin_top = 18.0
+margin_right = 537.0
+margin_bottom = 32.0
+text = "PAUSED"

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/E.wav-ba2ed9b3b96dfb1dbcdf6b316a482956.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Steps/Metal/E.wav"
+dest_files=[ "res://.import/E.wav-ba2ed9b3b96dfb1dbcdf6b316a482956.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
