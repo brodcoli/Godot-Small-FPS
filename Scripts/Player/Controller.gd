@@ -1,6 +1,6 @@
 extends KinematicBody
 
-#A lot of the code in this script is borrowed from here: https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd
+#A lot of the code in this script is borrowed from here https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd
 
 var noclip = false
 
