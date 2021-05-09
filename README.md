@@ -5,6 +5,9 @@
 A small FPS made with the Godot Engine.<br />
 This game is more of a demo also I'm not an expert programmer or Godot user.
 
+Credit to turtlewit for his player controller script that I partly modified:<br />
+https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd <3
+
 Credit to these SFX I used in the game:<br />
 https://freesound.org/people/Fission9/sounds/521590/<br />
 https://freesound.org/people/mypantsfelldown/sounds/398937/<br />
