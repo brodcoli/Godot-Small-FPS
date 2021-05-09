@@ -13,6 +13,7 @@ Use `Q` to sprint<br />
 Use `left shift` to crouch<br />
 Use `space` to jump<br />
 Use `left shift + space` to crouch-jump
+Use `F11` to toggle fullscreen
 
 ## Credit
 I partly modified a script made by turtlewit and Blasterott18 for the player controller:<br />
