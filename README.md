@@ -12,7 +12,7 @@ Use `W`, `A`, `S`, `D` to move<br />
 Use `Q` to sprint<br />
 Use `left shift` to crouch<br />
 Use `space` to jump<br />
-Use `left shift + space` to crouch-jump
+Use `left shift + space` to crouch-jump<br />
 Use `F11` to toggle fullscreen
 
 ## Credit
