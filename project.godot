@@ -32,7 +32,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="3dadventure"
+config/name="Godot-Small-FPS"
 run/main_scene="res://Scenes/Worlds/MainWorld.tscn"
 config/icon="res://icon.png"
 
