@@ -4,7 +4,7 @@
 
 ## Description
 A small FPS made with the Godot Engine.<br />
-This game is more of a demo also I'm not an expert programmer or Godot user.
+I'm not an expert programmer or Godot user so parts of the code may be silly silly.
 
 ## Controls
 Use `left mouse button` to fire<br />
@@ -12,7 +12,9 @@ Use `W`, `A`, `S`, `D` to move<br />
 Use `Q` to sprint<br />
 Use `left shift` to crouch<br />
 Use `space` to jump<br />
-Use `left shift + space` to crouch-jump
+Use `left shift + space` to crouch-jump<br />
+Use `Esc` to pause (doesn't really pause though)<br />
+Use `F11` to toggle fullscreen
 
 ## Credit
 I partly modified a script made by turtlewit and Blasterott18 for the player controller:<br />
