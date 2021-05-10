@@ -31,7 +31,7 @@ func _physics_process(delta):
 				if time_since_dart > dart_speed and abs(amt) < 0.5:
 					_last_dart = OS.get_ticks_msec()
 					Audio.play("Robot/Fire/A", translation)
-					_player.hurt(4, translation)
+					_player.hurt(2, translation)
 			else:
 				_interested = false
 		else:
