@@ -1,27 +1,27 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene format=3 uid="uid://cyqoi5q1dgdkk"]
 
-[ext_resource path="res://Assets/Models/health_pack.glb" type="PackedScene" id=1]
-[ext_resource path="res://Scripts/HealthPack.gd" type="Script" id=2]
+[ext_resource type="PackedScene" uid="uid://dsxuuqf5epkeu" path="res://Assets/Models/health_pack.glb" id="1"]
+[ext_resource type="Script" uid="uid://cdsrx85fg44k7" path="res://Scripts/HealthPack.gd" id="2"]
 
-[sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.51203, 0.14475, 0.375497 )
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(1.02406, 0.2895, 0.750994)
 
-[sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.684448, 0.267981, 0.560217 )
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(1.368896, 0.535962, 1.120434)
 
-[node name="HealthPack" type="RigidBody"]
-script = ExtResource( 2 )
+[node name="HealthPack" type="RigidBody3D" unique_id=1180853445]
+script = ExtResource("2")
 
-[node name="health_pack" parent="." instance=ExtResource( 1 )]
+[node name="health_pack" parent="." unique_id=875638864 instance=ExtResource("1")]
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14172, -0.13984 )
-shape = SubResource( 1 )
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1128409670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14172, -0.13984)
+shape = SubResource("1")
 
-[node name="Area" type="Area" parent="."]
+[node name="Area3D" type="Area3D" parent="." unique_id=707839887]
 
-[node name="CollisionShape" type="CollisionShape" parent="Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.131021, -0.144478 )
-shape = SubResource( 2 )
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1347440105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.131021, -0.144478)
+shape = SubResource("2")
 
-[connection signal="body_entered" from="Area" to="." method="_on_body_entered"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_body_entered"]

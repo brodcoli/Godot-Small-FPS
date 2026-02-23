@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/F.wav-011cad1bb7035ac8569d97cfc8051700.sample"
+type="AudioStreamWAV"
+uid="uid://wdbe16iwefvj"
+path="res://.godot/imported/F.wav-011cad1bb7035ac8569d97cfc8051700.sample"
 
 [deps]
 
 source_file="res://Assets/Audio/Ball/Bounce/F.wav"
-dest_files=[ "res://.import/F.wav-011cad1bb7035ac8569d97cfc8051700.sample" ]
+dest_files=["res://.godot/imported/F.wav-011cad1bb7035ac8569d97cfc8051700.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

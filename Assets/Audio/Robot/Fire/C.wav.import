@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/C.wav-ea8e6db5ba8081ae7e4815eebd42ec50.sample"
+type="AudioStreamWAV"
+uid="uid://db3jqwdrqv111"
+path="res://.godot/imported/C.wav-ea8e6db5ba8081ae7e4815eebd42ec50.sample"
 
 [deps]
 
 source_file="res://Assets/Audio/Robot/Fire/C.wav"
-dest_files=[ "res://.import/C.wav-ea8e6db5ba8081ae7e4815eebd42ec50.sample" ]
+dest_files=["res://.godot/imported/C.wav-ea8e6db5ba8081ae7e4815eebd42ec50.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

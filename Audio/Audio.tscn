@@ -128,37 +128,37 @@ stream = ExtResource( 8 )
 
 [node name="A" type="AudioStreamPlayer3D" parent="Ball/Bounce"]
 stream = ExtResource( 19 )
-unit_db = 1.0
+volume_db = 1.0
 unit_size = 3.0
 
 [node name="B" type="AudioStreamPlayer3D" parent="Ball/Bounce"]
 stream = ExtResource( 13 )
 attenuation_model = 1
-unit_db = 1.0
+volume_db = 1.0
 unit_size = 3.0
 
 [node name="C" type="AudioStreamPlayer3D" parent="Ball/Bounce"]
 stream = ExtResource( 15 )
 attenuation_model = 1
-unit_db = 1.0
+volume_db = 1.0
 unit_size = 3.0
 
 [node name="D" type="AudioStreamPlayer3D" parent="Ball/Bounce"]
 stream = ExtResource( 17 )
 attenuation_model = 1
-unit_db = 1.0
+volume_db = 1.0
 unit_size = 3.0
 
 [node name="E" type="AudioStreamPlayer3D" parent="Ball/Bounce"]
 stream = ExtResource( 16 )
 attenuation_model = 1
-unit_db = 1.0
+volume_db = 1.0
 unit_size = 3.0
 
 [node name="F" type="AudioStreamPlayer3D" parent="Ball/Bounce"]
 stream = ExtResource( 18 )
 attenuation_model = 1
-unit_db = 1.0
+volume_db = 1.0
 unit_size = 3.0
 
 [node name="Hit" type="Node" parent="Ball"]

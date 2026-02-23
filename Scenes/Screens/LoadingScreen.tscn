@@ -11,22 +11,22 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="MarginContainer"]
-margin_right = 1024.0
-margin_bottom = 600.0
+offset_right = 1024.0
+offset_bottom = 600.0
 color = Color( 0, 0, 0, 0.537255 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
-margin_right = 1024.0
-margin_bottom = 600.0
+offset_right = 1024.0
+offset_bottom = 600.0
 
 [node name="Label" type="Label" parent="MarginContainer/CenterContainer"]
-margin_left = 481.0
-margin_top = 293.0
-margin_right = 542.0
-margin_bottom = 307.0
+offset_left = 481.0
+offset_top = 293.0
+offset_right = 542.0
+offset_bottom = 307.0
 text = "Loading..."
 __meta__ = {
 "_edit_use_anchors_": false

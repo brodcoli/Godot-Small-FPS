@@ -5,7 +5,7 @@ var last_steps_tracker = {}
 
 func play(path: String, pos: Vector3):
 	var s = get_node(path)
-	s.translation = pos
+	s.position = pos
 	s.play()
 	
 func play_rand(path: String, pos: Vector3, id: String = ""):
@@ -21,9 +21,9 @@ func play_rand(path: String, pos: Vector3, id: String = ""):
 		if not last_steps.has(s.name):
 			last_steps.pop_front()
 			last_steps.append(s.name)
-			s.translation = pos
+			s.position = pos
 			s.play()
 			return s.name
 			
 func play_rand_player(path: String, id: String = ""):
-	play_rand(path, get_tree().get_nodes_in_group("player")[0].translation, id)
+	play_rand(path, get_tree().get_nodes_in_group("player")[0].position, id)

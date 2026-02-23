@@ -1,8 +1,9 @@
 [remap]
 
-importer="texture_array"
-type="TextureArray"
-path="res://.import/TheMap.exr-d85a669176244b094e6550eb79bf1e18.texarr"
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://dho4iwvr1qxqs"
+path="res://.godot/imported/TheMap.exr-d85a669176244b094e6550eb79bf1e18.ctexarray"
 metadata={
 "vram_texture": false
 }
@@ -10,16 +11,18 @@ metadata={
 [deps]
 
 source_file="res://TheMap/TheMap.exr"
-dest_files=[ "res://.import/TheMap.exr-d85a669176244b094e6550eb79bf1e18.texarr" ]
+dest_files=["res://.godot/imported/TheMap.exr-d85a669176244b094e6550eb79bf1e18.ctexarray"]
 
 [params]
 
 compress/mode=0
-compress/no_bptc_if_rgb=false
-flags/repeat=false
-flags/filter=true
-flags/mipmaps=false
-flags/anisotropic=false
-flags/srgb=false
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/channel_pack=1
+mipmaps/generate=false
+mipmaps/limit=-1
 slices/horizontal=1
 slices/vertical=3

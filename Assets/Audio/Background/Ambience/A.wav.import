@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/A.wav-8bf9f548827498c53b3d1d62179f874e.sample"
+type="AudioStreamWAV"
+uid="uid://ccnlsqosp0vn"
+path="res://.godot/imported/A.wav-8bf9f548827498c53b3d1d62179f874e.sample"
 
 [deps]
 
 source_file="res://Assets/Audio/Background/Ambience/A.wav"
-dest_files=[ "res://.import/A.wav-8bf9f548827498c53b3d1d62179f874e.sample" ]
+dest_files=["res://.godot/imported/A.wav-8bf9f548827498c53b3d1d62179f874e.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=true
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/B.wav-2797668904dcdc50fdd5998847d7ad50.sample"
+type="AudioStreamWAV"
+uid="uid://drakdue1e6hhw"
+path="res://.godot/imported/B.wav-2797668904dcdc50fdd5998847d7ad50.sample"
 
 [deps]
 
 source_file="res://Assets/Audio/Gun/Fire/B.wav"
-dest_files=[ "res://.import/B.wav-2797668904dcdc50fdd5998847d7ad50.sample" ]
+dest_files=["res://.godot/imported/B.wav-2797668904dcdc50fdd5998847d7ad50.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

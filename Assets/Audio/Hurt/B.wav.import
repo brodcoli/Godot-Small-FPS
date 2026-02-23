@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/B.wav-6f3066e0b9b3661c3757b60c4124e5c8.sample"
+type="AudioStreamWAV"
+uid="uid://c2ga4t5hkpjpo"
+path="res://.godot/imported/B.wav-6f3066e0b9b3661c3757b60c4124e5c8.sample"
 
 [deps]
 
 source_file="res://Assets/Audio/Hurt/B.wav"
-dest_files=[ "res://.import/B.wav-6f3066e0b9b3661c3757b60c4124e5c8.sample" ]
+dest_files=["res://.godot/imported/B.wav-6f3066e0b9b3661c3757b60c4124e5c8.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

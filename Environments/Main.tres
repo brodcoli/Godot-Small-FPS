@@ -1,7 +1,8 @@
-[gd_resource type="Environment" format=2]
+[gd_resource type="Environment" format=3 uid="uid://ch6pn1wgbhf8s"]
 
 [resource]
 ssao_enabled = true
-ssao_intensity = 1.5
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
 adjustment_brightness = 0.9
 adjustment_contrast = 1.1

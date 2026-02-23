@@ -1,7 +1,7 @@
-extends Spatial
+extends Node3D
 
-onready var _player = get_node("..")
-onready var _head = get_node("../Head")
+@onready var _player = get_node("..")
+@onready var _head = get_node("../Head")
 
 const follow_speed = 20
 

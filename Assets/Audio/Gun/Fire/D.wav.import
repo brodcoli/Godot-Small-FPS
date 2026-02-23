@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/D.wav-473f2146bd8167ca634bc536728cbff1.sample"
+type="AudioStreamWAV"
+uid="uid://ckd2vy7dwqitm"
+path="res://.godot/imported/D.wav-473f2146bd8167ca634bc536728cbff1.sample"
 
 [deps]
 
 source_file="res://Assets/Audio/Gun/Fire/D.wav"
-dest_files=[ "res://.import/D.wav-473f2146bd8167ca634bc536728cbff1.sample" ]
+dest_files=["res://.godot/imported/D.wav-473f2146bd8167ca634bc536728cbff1.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

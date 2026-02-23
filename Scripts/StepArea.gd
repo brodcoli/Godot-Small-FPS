@@ -1,8 +1,8 @@
-extends Area
+extends Area3D
 
 class_name StepArea
 
-export(String, "Default", "Metal") var material_type = "Default"
+@export var material_type = "Default" # (String, "Default", "Metal")
 
 func get_audio_path():
 	if material_type == "Default":

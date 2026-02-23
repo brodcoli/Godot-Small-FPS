@@ -1,8 +1,13 @@
-extends KinematicBody
+extends Node
 
 #A lot of the code in this script is borrowed from here https://github.com/turtlewit/VineCrawler/blob/master/PlayerNew.gd
 
-var noclip = false
+@onready var _player: Player = $".."
+@onready var _head: Node3D = $"../Head"
+@onready var _collision_shape: CollisionShape3D = $"../CollisionShape3D"
+
+
+var noclip := false
 
 var cmd = {
 	forward_move 	= 0.0,
@@ -45,17 +50,13 @@ var wish_jump = false;
 
 var touching_ground = false;
 
-var _player: Spatial
-var _head: Spatial
-var _collision_shape: CollisionShape
-
-func init(player: Spatial, head: Spatial, collision_shape: CollisionShape):
+func init(player: Node3D, head: Node3D, collision_shape: CollisionShape3D):
 	_player = player
 	_head = head
 	_collision_shape = collision_shape
 	set_physics_process(true)
 
-func process_movement(delta):
+func _physics_process(delta: float) -> void:
 	var is_sprinting = Input.is_action_pressed("sprint")
 	var is_jumping = Input.is_action_pressed("jump")
 	var is_crouching = Input.is_action_pressed("crouch")
@@ -84,7 +85,7 @@ func process_movement(delta):
 		h += _head.transform.basis.x * right
 		h += _head.transform.basis.z * -forward
 		v += Vector3.UP * up
-		_player.translation += (h + v) * speed * delta
+		_player.position += (h + v) * speed * delta
 	else:
 		_queue_jump()
 		if touching_ground:
@@ -110,20 +111,25 @@ func process_movement(delta):
 		player_velocity.y -= gravity * delta
 
 		if just_jumped:
-			player_velocity = _player.move_and_slide(player_velocity, up, false, 4, 0.785398, false)
+			_player.set_velocity(player_velocity)
+			_player.set_up_direction(up)
+			_player.set_floor_stop_on_slope_enabled(false)
+			_player.set_max_slides(4)
+			_player.set_floor_max_angle(0.785398)
+			# TODOConverter3To4 infinite_inertia were removed in Godot 4 - previous value `false`
+			_player.move_and_slide()
+			player_velocity = _player.velocity
 		else:
-			player_velocity = _player.move_and_slide_with_snap(player_velocity, Vector3.DOWN, up, true, 4, 0.785398, false)
+			_player.set_velocity(player_velocity)
+			# TODOConverter3To4 looks that snap in Godot 4 is float, not vector like in Godot 3 - previous value `Vector3.DOWN`
+			_player.set_up_direction(up)
+			_player.set_floor_stop_on_slope_enabled(true)
+			_player.set_max_slides(4)
+			_player.set_floor_max_angle(0.785398)
+			# TODOConverter3To4 infinite_inertia were removed in Godot 4 - previous value `false`
+			_player.move_and_slide()
+			player_velocity = _player.velocity
 		touching_ground = _player.is_on_floor()
-		
-		return player_velocity
-
-func _snap_to_ground(from):
-	var to = from + -_head.global_transform.basis.y * ground_snap_tolerance
-	var space_state = get_world().get_direct_space_state()
-
-	var result = space_state.intersect_ray(from, to)
-	if !result.empty():
-		_head.global_transform.origin.y = result.position.y
 
 func _set_movement_dir():
 	cmd.forward_move = 0.0
@@ -290,7 +296,7 @@ func _cmd_scale():
 
 	return scale
 			
-func process(delta):
+func _process(delta: float) -> void:
 	var just_noclip = Input.is_action_just_pressed("noclip")
 	
 	if just_noclip:
@@ -302,8 +308,7 @@ func process(delta):
 			gravity = gravity_strength
 			_collision_shape.disabled = false
 
-func input(event):
+func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and _player.mouse_captured:
 		_head.rotation_degrees.y -= event.relative.x * _player.mouse_sensitivity / 10
 		_head.rotation_degrees.x = clamp(_head.rotation_degrees.x - event.relative.y * _player.mouse_sensitivity / 10, -90, 90)
-

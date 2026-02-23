@@ -15,8 +15,8 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Container/MarginContainer"]
-margin_right = 1024.0
-margin_bottom = 600.0
+offset_right = 1024.0
+offset_bottom = 600.0
 color = Color( 0, 0, 0, 0.309804 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -24,15 +24,15 @@ __meta__ = {
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Container"]
 anchor_right = 1.0
-margin_bottom = 51.0
+offset_bottom = 51.0
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Container/HBoxContainer"]
-margin_left = 486.0
-margin_top = 18.0
-margin_right = 537.0
-margin_bottom = 32.0
+offset_left = 486.0
+offset_top = 18.0
+offset_right = 537.0
+offset_bottom = 32.0
 text = "PAUSED"

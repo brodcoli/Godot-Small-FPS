@@ -1,4 +1,4 @@
-extends Area
+extends Area3D
 
 const _default_path = "Steps/Default"
 var step_audio_path = _default_path
