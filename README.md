@@ -1,6 +1,5 @@
-# Godot-Small-FPS (Godot 3.5)
+# Godot-Small-FPS (Godot 4.6)
 
-*This project was last tested in Godot 3.5 and **does not work with Godot 4.0***
 ![](https://i.imgur.com/2jqKUjU.png)
 
 ## Description
